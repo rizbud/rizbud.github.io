@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  icon: string;
+  class?: string;
+  iconClass?: string;
+}
+
+const {
+  href,
+  title,
+  icon,
+  class: className = "",
+  iconClass = "",
+} = Astro.props;
+---
+
+<li class="items-center justify-center flex flex-col gap-2 group">
+  <div
+    class={`rounded-full overflow-hidden w-[4.5rem] h-[4.5rem] ${className} duration-300 object-cover group-hover:scale-125`}
+  >
+    <a href={href} target="_blank">
+      <img
+        src={icon}
+        class={`duration-300 object-cover ${iconClass}`}
+        alt={title}
+      />
+    </a>
+  </div>
+</li>
