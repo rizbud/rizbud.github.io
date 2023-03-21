@@ -2,7 +2,7 @@ export default [
   {
     url: "https://saweria.co/rizbud",
     title: "Saweria",
-    icon: "/svg/saweria.png",
+    icon: "/svg/saweria.webp",
     class: "bg-purple-700",
     iconClass: "scale-75",
   },
