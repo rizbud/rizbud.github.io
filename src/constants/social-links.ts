@@ -7,7 +7,7 @@ export default [
     iconClass: "scale-75",
   },
   {
-    url: "https://linkedin.com/in/rizkibudi",
+    url: "https://linkedin.com/in/rizbud",
     title: "LinkedIn",
     icon: "/svg/linkedin.svg",
   },
