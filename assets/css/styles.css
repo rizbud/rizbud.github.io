@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes onload-animation-left {
+  0% {
+    transform: translateX(-3rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes onload-animation-right {
+  0% {
+    transform: translateX(3rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes onload-animation-top {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  animation: onload-animation-top 1s ease-in-out;
+}
+
+#about {
+  animation: onload-animation-left 1s ease-in-out;
+}
+
+#skills {
+  animation: onload-animation-right 1s ease-in-out;
+}

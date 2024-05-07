@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rizki Budi Prasetyo is a Fullstack Developer with 3 years of experience. He started his career as a React Native Developer in 2020 and then he became a Fullstack Developer in 2022. Having interest in tech and programming since he was in high school made him decide to pursue a career in the tech industry."
+    />
+    <meta
+      name="keywords"
+      content="rizki budi prasetyo, rizki budi, rizki prasetyo, rizbud, rizb.ud, ri_zbud, fullstack developer, javascript, typescript, node.js, express.js, fastify, nestjs, react, vue, next.js, nuxt.js, react native, mysql, postgresql, firebase"
+    />
+    <title>Rizki Budi Prasetyo | Fullstack Developer</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Javascript -->
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/smooth-scroll.min.js"></script>
+
+    <!-- Google Fonts Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <!-- Body -->
+  <body
+    class="min-h-screen bg-gradient-to-br from-slate-950 to-slate-800 text-slate-200 overflow-x-hidden overscroll-none"
+  >
+    <!-- Header section -->
+    <header class="sticky top-0 z-10 w-full max-w-screen-lg mx-auto px-6">
+      <!-- Navbar -->
+      <nav
+        class="bg-slate-400 bg-opacity-10 backdrop-blur-lg rounded-b-lg shadow-lg p-6"
+      >
+        <ul class="flex justify-center gap-3 md:justify-start md:gap-6">
+          <li>
+            <a href="#" class="underline hover:text-blue-500">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="underline hover:text-blue-500">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="underline hover:text-blue-500"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="underline hover:text-blue-500"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="max-w-screen-lg mx-auto p-6 my-4">
+      <!-- About section -->
+      <div
+        id="about"
+        class="bg-slate-400 bg-opacity-10 p-6 rounded-lg shadow-lg gap-4 flex flex-col-reverse lg:grid lg:grid-cols-4 items-center gap-6 -mb-12"
+      >
+        <div class="col-span-3 flex flex-col">
+          <h1 class="text-3xl font-bold uppercase text-center lg:text-left">
+            Rizki Budi Prasetyo
+          </h1>
+          <h3 class="text-xl font-semibold text-center lg:text-left">
+            Fullstack Developer
+          </h3>
+
+          <article class="mt-4">
+            <p>
+              Hello, I am Rizki Budi Prasetyo, a Fullstack Developer with 3
+              years of experience. I started my career as a React Native
+              Developer in 2020 and then I became a Fullstack Developer in 2022.
+              Having interest in tech and programming since I was in high school
+              made me decide to pursue a career in the tech industry.
+            </p>
+            <p class="mt-2">
+              I primarily focus on web application development utilizing Next.js
+              and mobile application development using React Native.
+              Occasionally, I also engage in backend development using Node.js,
+              Express.js, Fastify, and NestJS. for personal projects.
+            </p>
+          </article>
+        </div>
+
+        <div class="w-full flex flex-col items-center gap-5">
+          <div class="relative group overflow-hidden rounded-full w-fit h-fit">
+            <img
+              src="assets/images/profile.webp"
+              alt="Rizki Budi Prasetyo"
+              class="rounded-full shadow-lg aspect-square w-48 h-48 group-hover:scale-125 transition-transform duration-300"
+            />
+          </div>
+
+          <div id="social-media" class="flex gap-4"></div>
+        </div>
+      </div>
+
+      <!-- Skills section -->
+      <div id="skills" class="flex flex-col justify-center -mb-12">
+        <h2 class="text-2xl font-semibold text-center mt-24">Skills</h2>
+        <div
+          id="my-skills"
+          class="flex flex-wrap gap-4 justify-center mt-4"
+        ></div>
+      </div>
+
+      <!-- Experience section -->
+      <div
+        id="experience"
+        class="flex flex-col justify-center items-center -mb-12 -translate-x-12 opacity-0"
+      >
+        <h2 class="text-2xl font-semibold text-center mt-24">Experience</h2>
+        <div id="my-experience" class="flex flex-col mt-4"></div>
+      </div>
+
+      <!-- Projects section -->
+      <div
+        id="projects"
+        class="flex flex-col justify-center items-center translate-x-12 opacity-0"
+      >
+        <h2 class="text-2xl font-semibold text-center mt-24">Projects</h2>
+        <div
+          id="my-projects"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mt-4 flex-wrap"
+        ></div>
+        <span class="text-center mt-4"
+          >See my open source projects on
+          <a
+            href="https://github.com/rizbud?tab=repositories"
+            target="_blank"
+            class="underline text-blue-500"
+            >github.com/rizbud</a
+          >.
+        </span>
+      </div>
+    </main>
+
+    <!-- Javascript DOM related -->
+    <script src="assets/js/social-media.js"></script>
+    <script src="assets/js/skills.js"></script>
+    <script src="assets/js/experience.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/animation.js"></script>
+  </body>
+</html>

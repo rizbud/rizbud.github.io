@@ -1,0 +1,164 @@
+const projects = [
+  {
+    name: "Tabist.co.jp",
+    image: "assets/images/tabist.png",
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "React Native",
+      "MobX",
+      "Fastify",
+      "Vercel",
+    ],
+    url: {
+      web: "https://tabist.co.jp",
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.tabist.booking",
+      appstore: "https://apps.apple.com/app/id1621250313",
+    },
+  },
+  {
+    name: "Melaka.app",
+    image: "assets/images/melaka.png",
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "NX",
+      "Tailwind CSS",
+      "XState",
+      "Vercel",
+    ],
+    url: {
+      web: "https://melaka.app",
+      playstore:
+        "https://play.google.com/store/apps/details?id=app.melaka.dashboard.twa",
+    },
+  },
+  {
+    name: "KunciPlay",
+    image: "assets/images/kunciplay.jpg",
+    techstack: [
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "GraphQL",
+      "Prisma",
+      "tRPC",
+      "Vercel",
+    ],
+  },
+  {
+    name: "Sebarin",
+    image: "assets/images/sebarin.png",
+    techstack: ["Nuxt.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    url: {
+      web: "https://sebarin.id",
+    },
+  },
+  {
+    name: "KunciNFT",
+    image: "assets/images/kuncinft.png",
+    techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Web3", "Vercel"],
+  },
+  {
+    name: "Nolu Dating App",
+    image: "assets/images/nolu.jpg",
+    techstack: [
+      "React Native",
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Redux",
+    ],
+    url: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.dating.adate4u",
+      appstore: "https://apps.apple.com/us/app/nolu/id1594380997",
+    },
+  },
+  {
+    name: "HBBL",
+    image: "assets/images/hbbl.png",
+    techstack: ["Gatsby.js", "TypeScript", "Tailwind CSS", "Vercel"],
+  },
+  {
+    name: "Wispay",
+    image: "assets/images/wispay.jpg",
+    techstack: ["Flutter", "Dart", "GetX"],
+    url: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.dating.adate4u",
+      appstore: "https://apps.apple.com/us/app/nolu/id1594380997",
+    },
+  },
+  {
+    name: "One21",
+    image: "assets/images/one21.webp",
+    techstack: ["React Native", "JavaScript", "Redux"],
+    url: {
+      playstore: "https://play.google.com/store/apps/details?id=com.one21",
+      appstore: "https://apps.apple.com/id/app/one21/id1540220733",
+    },
+  },
+  {
+    name: "7Desk",
+    image: "assets/images/7desk.png",
+    techstack: ["React Native", "JavaScript", "Redux"],
+  },
+  {
+    name: "Karma Group",
+    image: "assets/images/karma.webp",
+    techstack: ["React Native", "JavaScript", "Redux"],
+    url: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.karmagroups",
+      appstore: "https://apps.apple.com/in/app/karma-group/id1296156992",
+    },
+  },
+];
+
+// Get project element from the DOM
+const projectEl = document.getElementById("my-projects");
+
+// Loop through project data and render it to the DOM
+projects.forEach((project) => {
+  projectEl.innerHTML += `
+    <div class="flex flex-col bg-slate-400 bg-opacity-10 rounded-lg shadow-lg gap-2 overflow-hidden opacity-0">
+      <div class="relative overflow-hidden">
+        <img
+          src="${project.image}"
+          alt="${project.name}"
+          class="w-full h-64 object-cover rounded-t-lg bg-slate-200 hover:object-contain"
+        />
+      </div>
+
+      <div class="flex flex-col px-4 pb-4 gap-4">
+        <div class="flex flex-col">
+          <h3 class="text-lg font-semibold text-slate-200">${project.name}</h3>
+          <p class="text-slate-400 text-sm">${project.techstack.join(", ")}</p>
+        </div>
+        
+        <div class="flex gap-4">
+          ${
+            project.url?.web
+              ? `<a href="${project.url?.web}" target="_blank" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
+              : ""
+          }
+          ${
+            project.url?.playstore
+              ? `<a href="${project.url?.playstore}" target="_blank" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
+              : ""
+          }
+          ${
+            project.url?.appstore
+              ? `<a href="${project.url?.appstore}" target="_blank" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
+              : ""
+          }
+        </div>
+      </div>
+    </div>
+  `;
+});
