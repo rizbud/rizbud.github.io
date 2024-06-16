@@ -45,7 +45,7 @@ const skills = [
   },
   {
     name: "Fastify",
-    image: "https://avatars.githubusercontent.com/u/24939410?s=200&v=4",
+    image: "/assets/images/fastify.png",
   },
   {
     name: "Nest.js",
@@ -92,7 +92,7 @@ const skillsEl = document.getElementById("my-skills");
 // Loop through skills data and render it to the DOM
 skills.forEach((item) => {
   skillsEl.innerHTML += `
-    <div class="flex flex-col items-center justify-center rounded-lg bg-slate-400 gap-0.5 bg-opacity-10 shadow-lg aspect-square w-[120px] h-[120px]">
+    <div class="flex flex-col items-center justify-center rounded-lg bg-slate-500 gap-0.5 bg-opacity-25 shadow-lg aspect-square w-[120px] h-[120px]">
       <img src="${item.image}" alt="${item.name}" class="w-16 h-16" />
       <span class="text-sm text-center">${item.name}</span>
     </div>

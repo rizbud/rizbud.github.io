@@ -72,6 +72,7 @@ const projects = [
       "JavaScript",
       "Tailwind CSS",
       "Redux",
+      "In-App Purchase",
     ],
     url: {
       playstore:
@@ -92,6 +93,14 @@ const projects = [
       playstore:
         "https://play.google.com/store/apps/details?id=com.dating.adate4u",
       appstore: "https://apps.apple.com/us/app/nolu/id1594380997",
+    },
+  },
+  {
+    name: "VCON",
+    image: "assets/images/vcon.webp",
+    techstack: ["React Native", "TypeScript", "MobX", "Jitsi Meet"],
+    url: {
+      web: "https://www.vorta.tech/vcon",
     },
   },
   {
@@ -126,7 +135,7 @@ const projectEl = document.getElementById("my-projects");
 // Loop through project data and render it to the DOM
 projects.forEach((project) => {
   projectEl.innerHTML += `
-    <div class="flex flex-col bg-slate-400 bg-opacity-10 rounded-lg shadow-lg gap-2 overflow-hidden opacity-0">
+    <div class="flex flex-col bg-slate-500 bg-opacity-25 rounded-lg shadow-lg gap-2 overflow-hidden opacity-0">
       <div class="relative overflow-hidden">
         <img
           src="${project.image}"
