@@ -153,17 +153,17 @@ projects.forEach((project) => {
         <div class="flex gap-4">
           ${
             project.url?.web
-              ? `<a href="${project.url?.web}" target="_blank" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
+              ? `<a href="${project.url?.web}" name="${project.name}" target="_blank" title="Website" alt="${project.url?.web}" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
               : ""
           }
           ${
             project.url?.playstore
-              ? `<a href="${project.url?.playstore}" target="_blank" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
+              ? `<a href="${project.url?.playstore}" name="${project.name}" target="_blank" title="Google Play Store" alt="${project.url?.playstore}" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
               : ""
           }
           ${
             project.url?.appstore
-              ? `<a href="${project.url?.appstore}" target="_blank" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
+              ? `<a href="${project.url?.appstore}" name="${project.name}" target="_blank" title="Apple App Store" alt="${project.url?.appstore}" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
               : ""
           }
         </div>

@@ -27,7 +27,7 @@ const socialMediaEl = document.getElementById("social-media");
 // Loop through social media data and render it to the DOM
 socialMedia.forEach((item) => {
   socialMediaEl.innerHTML += `
-    <a href="${item.url}" name="${item.name}" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 hover:scale-125 transition duration-300 ease-in-out">
+    <a href="${item.url}" name="${item.name}" target="_blank" rel="noopener noreferrer" title="${item.name}" alt="${item.url}" class="hover:text-blue-500 hover:scale-125 transition duration-300 ease-in-out">
       <i class="${item.icon} fa-lg"></i>
     </a>
   `;
