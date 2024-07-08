@@ -49,6 +49,10 @@ const projects = [
       "tRPC",
       "Vercel",
     ],
+    url: {
+      playstore: "https://web.archive.org/web/20221222071020/https://play.google.com/store/apps/details?id=com.kunciplayer.app",
+      appstore: "https://web.archive.org/web/20230108174929/https://apps.apple.com/id/app/kunciplay/id6443617692"
+    },
   },
   {
     name: "Sebarin",
@@ -62,6 +66,9 @@ const projects = [
     name: "KunciNFT",
     image: "assets/images/kuncinft.png",
     techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Web3", "Vercel"],
+    url: {
+      web: "https://web.archive.org/web/20230606122945/https://kuncinft.com/",
+    },
   },
   {
     name: "Nolu Dating App",
@@ -91,8 +98,7 @@ const projects = [
     techstack: ["Flutter", "Dart", "GetX"],
     url: {
       playstore:
-        "https://play.google.com/store/apps/details?id=com.dating.adate4u",
-      appstore: "https://apps.apple.com/us/app/nolu/id1594380997",
+        "https://play.google.com/store/apps/details?id=com.wispayoutlet",
     },
   },
   {
