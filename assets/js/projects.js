@@ -91,6 +91,9 @@ const projects = [
     name: "HBBL",
     image: "assets/images/hbbl.png",
     techstack: ["Gatsby.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    url: {
+      web: "https://web.archive.org/web/20230321145614/https://www.hbbl.site/",
+    },
   },
   {
     name: "Wispay",
