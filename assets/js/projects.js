@@ -20,6 +20,16 @@ const projects = [
     },
   },
   {
+    name: "Goozone Sports",
+    image: "assets/images/goozone.webp",
+    techstack: ["TypeScript", "React Native"],
+    url: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.goozonesports.android",
+      appstore: "https://apps.apple.com/id/app/id6480057470",
+    },
+  },
+  {
     name: "Melaka.app",
     image: "assets/images/melaka.png",
     techstack: [
@@ -50,8 +60,10 @@ const projects = [
       "Vercel",
     ],
     url: {
-      playstore: "https://web.archive.org/web/20221222071020/https://play.google.com/store/apps/details?id=com.kunciplayer.app",
-      appstore: "https://web.archive.org/web/20230108174929/https://apps.apple.com/id/app/kunciplay/id6443617692"
+      playstore:
+        "https://web.archive.org/web/20221222071020/https://play.google.com/store/apps/details?id=com.kunciplayer.app",
+      appstore:
+        "https://web.archive.org/web/20230108174929/https://apps.apple.com/id/app/kunciplay/id6443617692",
     },
   },
   {
