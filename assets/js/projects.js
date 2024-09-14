@@ -20,6 +20,14 @@ const projects = [
     },
   },
   {
+    name: "The Gade Fest 2024",
+    image: "assets/images/the-gade-fest.webp",
+    techstack: ["TypeScript", "Next.js", "Supabase", "Tailwind CSS", "Vercel"],
+    url: {
+      web: "https://thegadefest.com",
+    },
+  },
+  {
     name: "Goozone Sports",
     image: "assets/images/goozone.webp",
     techstack: ["TypeScript", "React Native"],
