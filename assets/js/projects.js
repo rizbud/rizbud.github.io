@@ -126,7 +126,7 @@ const projects = [
   },
   {
     name: "VCON",
-    image: "assets/images/vcon.webp",
+    image: "assets/images/vcon.jpg",
     techstack: ["React Native", "TypeScript", "MobX", "Jitsi Meet"],
     url: {
       web: "https://www.vorta.tech/vcon",
@@ -164,35 +164,35 @@ const projectEl = document.getElementById("my-projects");
 // Loop through project data and render it to the DOM
 projects.forEach((project) => {
   projectEl.innerHTML += `
-    <div class="flex flex-col bg-slate-500 bg-opacity-25 rounded-lg shadow-lg gap-2 overflow-hidden opacity-0">
-      <div class="relative overflow-hidden">
+    <div class="flex flex-col bg-slate-100 rounded-lg shadow-lg gap-2 overflow-hidden opacity-0">
+      <div class="relative overflow-hidden group">
         <img
           src="${project.image}"
           alt="${project.name}"
-          class="w-full h-64 object-cover rounded-t-lg bg-slate-200 hover:object-contain"
+          class="w-full h-64 rounded-t-lg bg-slate-600 object-cover object-top group-hover:object-contain group-hover:object-center transition duration-300 ease-in-out"
         />
       </div>
 
-      <div class="flex flex-col px-4 pb-4 gap-4">
-        <div class="flex flex-col">
-          <h3 class="text-lg font-semibold text-slate-200">${project.name}</h3>
-          <p class="text-slate-400 text-sm">${project.techstack.join(", ")}</p>
+      <div class="flex flex-col px-4 pb-4 gap-4 min-h-32 justify-between">
+        <div class="flex flex-col h-full">
+          <h3 class="text-lg font-semibold">${project.name}</h3>
+          <p class="text-slate-700 text-sm">${project.techstack.join(", ")}</p>
         </div>
         
-        <div class="flex gap-4">
+        <div class="flex gap-4 text-slate-600">
           ${
             project.url?.web
-              ? `<a href="${project.url?.web}" name="${project.name}" target="_blank" title="Website" alt="${project.url?.web}" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
+              ? `<a href="${project.url?.web}" name="${project.name}" target="_blank" rel="noopener nofollow" title="Website" alt="${project.url?.web}" class="hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
               : ""
           }
           ${
             project.url?.playstore
-              ? `<a href="${project.url?.playstore}" name="${project.name}" target="_blank" title="Google Play Store" alt="${project.url?.playstore}" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
+              ? `<a href="${project.url?.playstore}" name="${project.name}" target="_blank" rel="noopener nofollow" title="Google Play Store" alt="${project.url?.playstore}" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
               : ""
           }
           ${
             project.url?.appstore
-              ? `<a href="${project.url?.appstore}" name="${project.name}" target="_blank" title="Apple App Store" alt="${project.url?.appstore}" class="text-slate-400 hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
+              ? `<a href="${project.url?.appstore}" name="${project.name}" target="_blank" rel="noopener nofollow" title="Apple App Store" alt="${project.url?.appstore}" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
               : ""
           }
         </div>
