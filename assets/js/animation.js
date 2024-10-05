@@ -7,8 +7,12 @@ const projectSection = document.getElementById("projects");
 // Get experience data from the DOM
 const experienceData = document.querySelectorAll(".experience-data");
 
+// Get hire me element from the DOM
+const hireMeSection = document.getElementById("hire-me");
+
 let experienceAlreadyAnimated = false;
 let projectAlreadyAnimated = false;
+let hireMeAlreadyAnimated = false;
 
 const animateExperience = async () => {
   // Add class to animate experience section
@@ -69,6 +73,20 @@ const animateProject = async () => {
   projectAlreadyAnimated = true;
 };
 
+const animateHireMe = async () => {
+  // Add class to animate hire me section
+  hireMeSection.classList.add(
+    "transition-all",
+    "duration-1000",
+    "ease-in-out",
+    "translate-y-0",
+    "opacity-100"
+  );
+  hireMeSection.classList.remove("translate-y-full", "opacity-0");
+
+  hireMeAlreadyAnimated = true;
+};
+
 // Animates experience and project sections when user scrolls
 window.onscroll = async () => {
   const scrollY = Math.min(window.scrollY, window.innerHeight);
@@ -85,6 +103,13 @@ window.onscroll = async () => {
     !projectAlreadyAnimated
   ) {
     animateProject();
+  }
+
+  if (
+    scrollY > hireMeSection.getBoundingClientRect().top &&
+    !hireMeAlreadyAnimated
+  ) {
+    animateHireMe();
   }
 };
 
@@ -104,5 +129,12 @@ window.onload = async () => {
     !projectAlreadyAnimated
   ) {
     animateProject();
+  }
+
+  if (
+    scrollY > hireMeSection.getBoundingClientRect().top &&
+    !hireMeAlreadyAnimated
+  ) {
+    animateHireMe();
   }
 };

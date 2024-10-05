@@ -182,17 +182,17 @@ projects.forEach((project) => {
         <div class="flex gap-4 text-slate-600">
           ${
             project.url?.web
-              ? `<a href="${project.url?.web}" name="${project.name}" target="_blank" rel="noopener nofollow" title="Website" alt="${project.url?.web}" class="hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
+              ? `<a href="${project.url?.web}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Website" alt="${project.url?.web}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_web' })" class="hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
               : ""
           }
           ${
             project.url?.playstore
-              ? `<a href="${project.url?.playstore}" name="${project.name}" target="_blank" rel="noopener nofollow" title="Google Play Store" alt="${project.url?.playstore}" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
+              ? `<a href="${project.url?.playstore}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Google Play Store" alt="${project.url?.playstore}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_playstore' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
               : ""
           }
           ${
             project.url?.appstore
-              ? `<a href="${project.url?.appstore}" name="${project.name}" target="_blank" rel="noopener nofollow" title="Apple App Store" alt="${project.url?.appstore}" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
+              ? `<a href="${project.url?.appstore}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Apple App Store" alt="${project.url?.appstore}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_appstore' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
               : ""
           }
         </div>

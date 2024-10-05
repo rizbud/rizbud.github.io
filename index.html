@@ -37,12 +37,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Font Awesome 6 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -66,7 +60,7 @@
           </li>
           <li>
             <a href="#experience" class="underline hover:text-blue-500"
-              >Experience</a
+              >Work Experience</a
             >
           </li>
           <li>
@@ -74,16 +68,19 @@
               >Projects</a
             >
           </li>
+          <li>
+            <a href="#hire-me" class="underline hover:text-blue-500">Hire Me</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Main section -->
-    <main class="max-w-screen-lg mx-auto p-6 my-4">
+    <main class="max-w-screen-lg mx-auto p-6 my-4 flex flex-col gap-12">
       <!-- About section -->
       <div
         id="about"
-        class="bg-slate-100 p-6 rounded-lg shadow-lg gap-4 flex flex-col-reverse lg:grid lg:grid-cols-4 items-center gap-6 -mb-12"
+        class="bg-slate-100 p-6 rounded-lg shadow-lg gap-4 flex flex-col-reverse lg:grid lg:grid-cols-4 items-center gap-4"
       >
         <div class="col-span-3 flex flex-col">
           <h1 class="text-3xl font-bold uppercase text-center lg:text-left">
@@ -93,7 +90,7 @@
             Full Stack Developer
           </h2>
 
-          <article class="mt-4">
+          <article class="mt-4 text-justify">
             <p>
               Hello, I am Rizki Budi Prasetyo, a Full Stack Developer with 4
               years of experience. I started my career as a React Native
@@ -108,6 +105,25 @@
               Express.js, Fastify, and NestJS for personal projects.
             </p>
           </article>
+
+          <div
+            class="flex items-center gap-4 justify-center w-full text-center"
+          >
+            <a
+              href="mailto:rizkibudi513@gmail.com"
+              onclick="trackGenerateLead('contact', 'Contact Me')"
+              class="bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg mt-4 w-full hover:bg-slate-700"
+              >Contact Me</a
+            >
+            <a
+              href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=share"
+              target="_blank"
+              rel="noopener"
+              onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
+              class="bg-[#108a00] text-white font-semibold py-2 px-4 rounded-lg mt-4 w-full hover:bg-[#14a800]"
+              >Hire Me on Upwork</a
+            >
+          </div>
         </div>
 
         <div class="w-full flex flex-col items-center gap-5">
@@ -124,20 +140,42 @@
       </div>
 
       <!-- Skills section -->
-      <div id="skills" class="flex flex-col justify-center -mb-12">
-        <h2 class="text-2xl font-semibold text-center mt-24">Skills</h2>
+      <div id="skills" class="flex flex-col justify-center">
+        <h2 class="text-2xl font-semibold text-center">Skills</h2>
         <div
           id="my-skills"
           class="flex flex-wrap gap-2 md:gap-4 justify-center mt-4"
         ></div>
+
+        <div class="mt-10 text-center">
+          <p>
+            Looking for a Developer with the skills I have? Let's work together!
+          </p>
+          <div class="flex items-center gap-4 justify-center">
+            <a
+              href="mailto:rizkibudi513@gmail.com"
+              onclick="trackGenerateLead('contact', 'Contact Me')"
+              class="bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg mt-4 w-fit hover:bg-slate-700"
+              >Contact Me</a
+            >
+            <a
+              href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=share"
+              target="_blank"
+              rel="noopener"
+              onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
+              class="bg-[#108a00] text-white font-semibold py-2 px-4 rounded-lg mt-4 w-fit hover:bg-[#14a800]"
+              >Hire Me on Upwork</a
+            >
+          </div>
+        </div>
       </div>
 
       <!-- Experience section -->
       <div
         id="experience"
-        class="flex flex-col justify-center items-center -mb-12 -translate-x-12 opacity-0"
+        class="flex flex-col justify-center items-center -translate-x-12 opacity-0"
       >
-        <h2 class="text-2xl font-semibold text-center mt-24">Experience</h2>
+        <h2 class="text-2xl font-semibold text-center">Experience</h2>
         <div id="my-experience" class="flex flex-col mt-4"></div>
       </div>
 
@@ -146,7 +184,7 @@
         id="projects"
         class="flex flex-col justify-center items-center translate-x-12 opacity-0"
       >
-        <h2 class="text-2xl font-semibold text-center mt-24">Projects</h2>
+        <h2 class="text-2xl font-semibold text-center">Projects</h2>
         <div
           id="my-projects"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mt-4 flex-wrap"
@@ -161,6 +199,36 @@
           >.
         </span>
       </div>
+
+      <!-- Hire Me section -->
+      <div
+        id="hire-me"
+        class="flex flex-col justify-center items-center translate-y-16 opacity-0 mb-12"
+      >
+        <h2 class="text-2xl font-semibold text-center">Hire Me</h2>
+        <p class="text-center mt-4">
+          I am available for freelance work or full-time employment. If you have
+          a project you want to start, think you need my help with something, or
+          just fancy saying hey, then get in touch.
+        </p>
+
+        <div class="flex items-center gap-4 justify-center w-full text-center">
+          <a
+            href="mailto:rizkibudi513@gmail.com"
+            onclick="trackGenerateLead('contact', 'Contact Me')"
+            class="bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg mt-4 w-full hover:bg-slate-700"
+            >Contact Me</a
+          >
+          <a
+            href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=share"
+            target="_blank"
+            rel="noopener"
+            onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
+            class="bg-[#108a00] text-white font-semibold py-2 px-4 rounded-lg mt-4 w-full hover:bg-[#14a800]"
+            >Hire Me on Upwork</a
+          >
+        </div>
+      </div>
     </main>
 
     <!-- Google Fonts Montserrat -->
@@ -169,14 +237,11 @@
       rel="stylesheet"
     />
 
-    <!-- Javascript -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/social-media.js"></script>
-    <script src="assets/js/skills.js"></script>
-    <script src="assets/js/experience.js"></script>
-    <script src="assets/js/projects.js"></script>
-    <script src="assets/js/animation.js"></script>
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -192,5 +257,14 @@
 
       gtag("config", "G-70Q1S0MP16");
     </script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/social-media.js"></script>
+    <script src="assets/js/skills.js"></script>
+    <script src="assets/js/experience.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/animation.js"></script>
   </body>
 </html>
