@@ -3,14 +3,15 @@ const projects = [
     name: "Tabist.co.jp",
     image: "assets/images/tabist.png",
     techstack: [
-      "Next.js",
       "TypeScript",
-      "Tailwind CSS",
+      "Next.js",
+      "TailwindCSS",
       "Redux",
       "React Native",
       "MobX",
       "Fastify",
       "Vercel",
+      "AWS",
     ],
     url: {
       web: "https://tabist.co.jp",
@@ -20,9 +21,26 @@ const projects = [
     },
   },
   {
+    name: "Splitt.ink",
+    image: "assets/images/splittink.jpg",
+    techstack: [
+      "PHP",
+      "Laravel",
+      "Vue",
+      "TailwindCSS",
+      "SQLite",
+      "Docker",
+      "Nginx",
+    ],
+    url: {
+      web: "https://splitt.ink",
+      github: "https://github.com/rizbud/splittink",
+    },
+  },
+  {
     name: "The Gade Fest 2024",
     image: "assets/images/the-gade-fest.webp",
-    techstack: ["TypeScript", "Next.js", "Supabase", "Tailwind CSS", "Vercel"],
+    techstack: ["TypeScript", "Next.js", "Supabase", "TailwindCSS", "Vercel"],
     url: {
       web: "https://thegadefest.com",
     },
@@ -30,7 +48,7 @@ const projects = [
   {
     name: "Goozone Sports",
     image: "assets/images/goozone.webp",
-    techstack: ["TypeScript", "React Native"],
+    techstack: ["TypeScript", "React Native", "Firebase"],
     url: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.goozonesports.android",
@@ -41,12 +59,14 @@ const projects = [
     name: "Melaka.app",
     image: "assets/images/melaka.png",
     techstack: [
-      "Next.js",
       "TypeScript",
+      "Go",
+      "Next.js",
       "NX",
-      "Tailwind CSS",
+      "TailwindCSS",
       "XState",
       "Vercel",
+      "GCP",
     ],
     url: {
       web: "https://melaka.app",
@@ -58,14 +78,13 @@ const projects = [
     name: "KunciPlay",
     image: "assets/images/kunciplay.jpg",
     techstack: [
+      "TypeScript",
       "React Native",
       "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
+      "TailwindCSS",
       "GraphQL",
-      "Prisma",
-      "tRPC",
       "Vercel",
+      "GCP",
     ],
     url: {
       playstore:
@@ -77,7 +96,7 @@ const projects = [
   {
     name: "Sebarin",
     image: "assets/images/sebarin.png",
-    techstack: ["Nuxt.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    techstack: ["TypeScript", "Nuxt.js", "TailwindCSS", "Vercel"],
     url: {
       web: "https://sebarin.id",
     },
@@ -85,7 +104,7 @@ const projects = [
   {
     name: "KunciNFT",
     image: "assets/images/kuncinft.png",
-    techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Web3", "Vercel"],
+    techstack: ["TypeScript", "Next.js", "TailwindCSS", "Web3", "Vercel"],
     url: {
       web: "https://web.archive.org/web/20230606122945/https://kuncinft.com/",
     },
@@ -94,10 +113,10 @@ const projects = [
     name: "Nolu Dating App",
     image: "assets/images/nolu.jpg",
     techstack: [
+      "JavaScript",
       "React Native",
       "Next.js",
-      "JavaScript",
-      "Tailwind CSS",
+      "TailwindCSS",
       "Redux",
       "In-App Purchase",
     ],
@@ -110,7 +129,7 @@ const projects = [
   {
     name: "HBBL",
     image: "assets/images/hbbl.png",
-    techstack: ["Gatsby.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    techstack: ["TypeScript", "Gatsby.js", "TailwindCSS", "Vercel"],
     url: {
       web: "https://web.archive.org/web/20230321145614/https://www.hbbl.site/",
     },
@@ -118,7 +137,7 @@ const projects = [
   {
     name: "Wispay",
     image: "assets/images/wispay.jpg",
-    techstack: ["Flutter", "Dart", "GetX"],
+    techstack: ["Dart", "Flutter", "GetX", "Firebase"],
     url: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.wispayoutlet",
@@ -127,7 +146,7 @@ const projects = [
   {
     name: "VCON",
     image: "assets/images/vcon.jpg",
-    techstack: ["React Native", "TypeScript", "MobX", "Jitsi Meet"],
+    techstack: ["TypeScript", "React Native", "MobX", "Jitsi Meet"],
     url: {
       web: "https://www.vorta.tech/vcon",
     },
@@ -144,12 +163,17 @@ const projects = [
   {
     name: "7Desk",
     image: "assets/images/7desk.png",
-    techstack: ["React Native", "JavaScript", "Redux"],
+    techstack: ["JavaScript", "React Native", "Redux", "Firebase"],
+    url: {
+      playstore: "https://appadvice.com/app/7desk/1561517350",
+      appstore: "https://appadvice.com/app/7desk/1561517350",
+      web: "https://www.instagram.com/7deskapp/",
+    },
   },
   {
     name: "Karma Group",
     image: "assets/images/karma.webp",
-    techstack: ["React Native", "JavaScript", "Redux"],
+    techstack: ["JavaScript", "React Native", "Redux"],
     url: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.karmagroups",
@@ -169,6 +193,7 @@ projects.forEach((project) => {
         <img
           src="${project.image}"
           alt="${project.name}"
+          loading="lazy"
           class="w-full h-64 rounded-t-lg bg-slate-600 object-cover object-top group-hover:object-contain group-hover:object-center transition duration-300 ease-in-out"
         />
       </div>
@@ -193,6 +218,11 @@ projects.forEach((project) => {
           ${
             project.url?.appstore
               ? `<a href="${project.url?.appstore}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Apple App Store" alt="${project.url?.appstore}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_appstore' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
+              : ""
+          }
+          ${
+            project.url?.github
+              ? `<a href="${project.url?.github}" title="${project.name}" target="_blank" rel="noopener nofollow" title="GitHub" alt="${project.url?.github}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_github' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-github fa-lg"></i></a>`
               : ""
           }
         </div>

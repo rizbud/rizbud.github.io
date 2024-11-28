@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Frontend Developer",
     company: "RubyH",
-    date: "2022 - 2024",
+    date: "2022 - 2023",
   },
   {
     title: "Fullstack Developer (Freelance)",

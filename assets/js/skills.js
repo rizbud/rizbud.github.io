@@ -12,16 +12,25 @@ const skills = [
     image: "https://img.icons8.com/color/64/000000/dart.png",
   },
   {
+    name: "PHP",
+    image: "/assets/images/php.png",
+  },
+  {
     name: "React.js",
     image: "https://img.icons8.com/color/64/000000/react-native.png",
+  },
+  {
+    name: "Next.js",
+    image: "https://img.icons8.com/color/64/000000/nextjs.png",
   },
   {
     name: "React Native",
     image: "https://img.icons8.com/color/64/000000/react-native.png",
   },
   {
-    name: "Next.js",
-    image: "https://img.icons8.com/color/64/000000/nextjs.png",
+    name: "Expo",
+    image:
+      "https://img.icons8.com/?size=64&id=7ImWFDcPfSlz&format=png&color=000000",
   },
   {
     name: "Vue.js",
@@ -52,6 +61,11 @@ const skills = [
     image: "https://img.icons8.com/color/64/000000/nestjs.png",
   },
   {
+    name: "Laravel",
+    image:
+      "https://img.icons8.com/?size=64&id=lRjcvhvtR81o&format=png&color=000000",
+  },
+  {
     name: "PostgreSQL",
     image: "https://img.icons8.com/?size=64&id=38561&format=png",
   },
@@ -61,7 +75,7 @@ const skills = [
   },
   {
     name: "SQLite",
-    image: "https://www.nuget.org/profiles/SQLite/avatar?imageSize=64",
+    image: "/assets/images/sqlite.png",
   },
   {
     name: "Git",
@@ -82,6 +96,10 @@ const skills = [
   {
     name: "Docker",
     image: "https://img.icons8.com/color/64/000000/docker.png",
+  },
+  {
+    name: "Nginx",
+    image: "https://img.icons8.com/color/64/000000/nginx.png",
   },
 ];
 
