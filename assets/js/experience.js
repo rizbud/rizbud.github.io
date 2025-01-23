@@ -6,7 +6,7 @@ const experiences = [
   },
   {
     title: "Frontend Developer",
-    company: "RubyH",
+    company: "PT. Sejahtera Murti Lestari (RubyH)",
     date: "2022 - 2023",
   },
   {
