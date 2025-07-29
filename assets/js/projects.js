@@ -6,10 +6,9 @@ const projects = [
       "TypeScript",
       "Next.js",
       "TailwindCSS",
-      "Redux",
       "React Native",
-      "MobX",
       "Fastify",
+      "Rails",
       "Vercel",
       "AWS",
     ],
@@ -19,10 +18,26 @@ const projects = [
         "https://play.google.com/store/apps/details?id=com.tabist.booking",
       appstore: "https://apps.apple.com/app/id1621250313",
     },
+    objectFit: "cover",
+  },
+  {
+    name: "Kompas Gramedia ML",
+    image: "assets/images/kg-ml.png",
+    techstack: ["TypeScript", "Next.js", "TailwindCSS", "Docker", "Nginx"],
+    objectFit: "cover",
+  },
+  {
+    name: "Mighty Attendance",
+    image: "assets/images/mighty.png",
+    techstack: ["TypeScript", "React Native", "Expo"],
+    url: {
+      appstore: "https://apps.apple.com/id/app/mighty-mig-mobile/id6743149746",
+    },
+    objectFit: "cover",
   },
   {
     name: "Splitt.ink",
-    image: "assets/images/splittink.jpg",
+    image: "assets/images/splittink.png",
     techstack: [
       "PHP",
       "Laravel",
@@ -36,24 +51,27 @@ const projects = [
       web: "https://splitt.ink",
       github: "https://github.com/rizbud/splittink",
     },
+    objectFit: "cover",
   },
   {
     name: "The Gade Fest 2024",
     image: "assets/images/the-gade-fest.webp",
     techstack: ["TypeScript", "Next.js", "Supabase", "TailwindCSS", "Vercel"],
     url: {
-      web: "https://thegadefest.com",
+      web: "https://web.archive.org/web/20240926113832/https://www.thegadefest.com/",
     },
+    objectFit: "cover",
   },
   {
     name: "Goozone Sports",
-    image: "assets/images/goozone.webp",
+    image: "assets/images/goozone.png",
     techstack: ["TypeScript", "React Native", "Firebase"],
     url: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.goozonesports.android",
       appstore: "https://apps.apple.com/id/app/id6480057470",
     },
+    objectFit: "cover",
   },
   {
     name: "Melaka.app",
@@ -73,10 +91,11 @@ const projects = [
       playstore:
         "https://play.google.com/store/apps/details?id=app.melaka.dashboard.twa",
     },
+    objectFit: "cover",
   },
   {
     name: "KunciPlay",
-    image: "assets/images/kunciplay.jpg",
+    image: "assets/images/kunciplay.png",
     techstack: [
       "TypeScript",
       "React Native",
@@ -92,6 +111,7 @@ const projects = [
       appstore:
         "https://web.archive.org/web/20230108174929/https://apps.apple.com/id/app/kunciplay/id6443617692",
     },
+    objectFit: "cover",
   },
   {
     name: "Sebarin",
@@ -100,6 +120,7 @@ const projects = [
     url: {
       web: "https://sebarin.id",
     },
+    objectFit: "cover",
   },
   {
     name: "KunciNFT",
@@ -108,10 +129,11 @@ const projects = [
     url: {
       web: "https://web.archive.org/web/20230606122945/https://kuncinft.com/",
     },
+    objectFit: "cover",
   },
   {
     name: "Nolu Dating App",
-    image: "assets/images/nolu.jpg",
+    image: "assets/images/nolu.png",
     techstack: [
       "JavaScript",
       "React Native",
@@ -125,6 +147,7 @@ const projects = [
         "https://play.google.com/store/apps/details?id=com.dating.adate4u",
       appstore: "https://apps.apple.com/us/app/nolu/id1594380997",
     },
+    objectFit: "cover",
   },
   {
     name: "HBBL",
@@ -133,15 +156,37 @@ const projects = [
     url: {
       web: "https://web.archive.org/web/20230321145614/https://www.hbbl.site/",
     },
+    objectFit: "cover",
   },
   {
-    name: "Wispay",
-    image: "assets/images/wispay.jpg",
+    name: "Wispay Outlet",
+    image: "assets/images/wispay.png",
     techstack: ["Dart", "Flutter", "GetX", "Firebase"],
     url: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.wispayoutlet",
     },
+    objectFit: "cover",
+  },
+  {
+    name: "Wispay Sales",
+    image: "assets/images/wispay-sales.png",
+    techstack: ["Dart", "Flutter", "GetX", "Firebase"],
+    url: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.wispaysales",
+    },
+    objectFit: "cover",
+  },
+  {
+    name: "Wispay Seller",
+    image: "assets/images/wispay-seller.png",
+    techstack: ["JavaScript", "React Native", "Redux", "Firebase"],
+    url: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.wispayoutletmerchant",
+    },
+    objectFit: "cover",
   },
   {
     name: "VCON",
@@ -150,15 +195,17 @@ const projects = [
     url: {
       web: "https://www.vorta.tech/vcon",
     },
+    objectFit: "contain",
   },
   {
     name: "One21",
-    image: "assets/images/one21.webp",
+    image: "assets/images/one21.png",
     techstack: ["React Native", "JavaScript", "Redux"],
     url: {
       playstore: "https://play.google.com/store/apps/details?id=com.one21",
       appstore: "https://apps.apple.com/id/app/one21/id1540220733",
     },
+    objectFit: "cover",
   },
   {
     name: "7Desk",
@@ -169,16 +216,18 @@ const projects = [
       appstore: "https://appadvice.com/app/7desk/1561517350",
       web: "https://www.instagram.com/7deskapp/",
     },
+    objectFit: "cover",
   },
   {
     name: "Karma Group",
-    image: "assets/images/karma.webp",
+    image: "assets/images/karma.png",
     techstack: ["JavaScript", "React Native", "Redux"],
     url: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.karmagroups",
       appstore: "https://apps.apple.com/in/app/karma-group/id1296156992",
     },
+    objectFit: "cover",
   },
 ];
 
@@ -194,7 +243,9 @@ projects.forEach((project) => {
           src="${project.image}"
           alt="${project.name}"
           loading="lazy"
-          class="w-full h-64 rounded-t-lg bg-slate-600 object-cover object-top group-hover:object-contain group-hover:object-center transition duration-300 ease-in-out"
+          class="w-full aspect-video rounded-t-lg bg-white object-center group-hover:scale-110 transition duration-300 ease-in-out ${
+            project.objectFit === "cover" ? "object-cover" : "object-contain"
+          } "
         />
       </div>
 
