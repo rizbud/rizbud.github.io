@@ -66,6 +66,11 @@ const skills = [
       "https://img.icons8.com/?size=64&id=lRjcvhvtR81o&format=png&color=000000",
   },
   {
+    name: "Ruby on Rails",
+    image:
+      "https://img.icons8.com/?size=64&id=kqJCAdWaGpOx&format=png&color=000000",
+  },
+  {
     name: "PostgreSQL",
     image: "https://img.icons8.com/?size=64&id=38561&format=png",
   },
@@ -76,6 +81,15 @@ const skills = [
   {
     name: "SQLite",
     image: "/assets/images/sqlite.png",
+  },
+  {
+    name: "Supabase",
+    image:
+      "https://img.icons8.com/?size=64&id=sH0rW2TvYdr9&format=png&color=000000",
+  },
+  {
+    name: "Firebase",
+    image: "https://img.icons8.com/color/64/000000/firebase.png",
   },
   {
     name: "Git",

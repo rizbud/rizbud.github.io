@@ -1,8 +1,13 @@
 const experiences = [
   {
-    title: "Frontend Engineer",
+    title: "Fullstack Engineer",
     company: "Tabist Co., Ltd.",
     date: "2023 - Present",
+  },
+  {
+    title: "Fullstack Developer",
+    company: "Freelance",
+    date: "2021 - Present",
   },
   {
     title: "Frontend Developer",
