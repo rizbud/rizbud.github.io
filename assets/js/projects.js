@@ -8,7 +8,9 @@ const projects = [
       "TailwindCSS",
       "React Native",
       "Fastify",
-      "Rails",
+      "Ruby on Rails",
+      "Python",
+      "FastAPI",
       "Vercel",
       "AWS",
     ],
@@ -236,47 +238,32 @@ const projectEl = document.getElementById("my-projects");
 
 // Loop through project data and render it to the DOM
 projects.forEach((project) => {
+  const links = project.url
+    ? `
+    <div class="project-links">
+      ${project.url.web ? `<a href="${project.url.web}" target="_blank" rel="noopener nofollow" class="project-link" onclick="gtag('event', 'select_content', { content_type: 'project', content_id: '${project.name}_web' })"><i class="fas fa-globe"></i> Web</a>` : ""}
+      ${project.url.github ? `<a href="${project.url.github}" target="_blank" rel="noopener nofollow" class="project-link" onclick="gtag('event', 'select_content', { content_type: 'project', content_id: '${project.name}_github' })"><i class="fab fa-github"></i> GitHub</a>` : ""}
+      ${project.url.playstore ? `<a href="${project.url.playstore}" target="_blank" rel="noopener nofollow" class="project-link" onclick="gtag('event', 'select_content', { content_type: 'project', content_id: '${project.name}_playstore' })"><i class="fab fa-google-play"></i> Play</a>` : ""}
+      ${project.url.appstore ? `<a href="${project.url.appstore}" target="_blank" rel="noopener nofollow" class="project-link" onclick="gtag('event', 'select_content', { content_type: 'project', content_id: '${project.name}_appstore' })"><i class="fab fa-apple"></i> iOS</a>` : ""}
+    </div>`
+    : "";
+
   projectEl.innerHTML += `
-    <div class="flex flex-col bg-slate-100 rounded-lg shadow-lg gap-2 overflow-hidden opacity-0">
-      <div class="relative overflow-hidden group">
+    <div class="project-card reveal">
+      <div class="project-thumb">
         <img
           src="${project.image}"
           alt="${project.name}"
           loading="lazy"
-          class="w-full aspect-video rounded-t-lg bg-white object-center group-hover:scale-110 transition duration-300 ease-in-out ${
-            project.objectFit === "cover" ? "object-cover" : "object-contain"
-          } "
+          style="${project.objectFit === "contain" ? "object-fit: contain; padding: 0.5rem;" : "object-fit: cover;"}"
         />
       </div>
-
-      <div class="flex flex-col px-4 pb-4 gap-4 min-h-32 justify-between">
-        <div class="flex flex-col h-full">
-          <h3 class="text-lg font-semibold">${project.name}</h3>
-          <p class="text-slate-700 text-sm">${project.techstack.join(", ")}</p>
+      <div class="project-body">
+        <p class="project-name">${project.name}</p>
+        <div class="tech-tags">
+          ${project.techstack.map((t) => `<span class="tech-tag">${t}</span>`).join("")}
         </div>
-        
-        <div class="flex gap-4 text-slate-600">
-          ${
-            project.url?.web
-              ? `<a href="${project.url?.web}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Website" alt="${project.url?.web}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_web' })" class="hover:scale-125 hover:text-blue-500"><i class="fas fa-globe fa-lg"></i></a>`
-              : ""
-          }
-          ${
-            project.url?.playstore
-              ? `<a href="${project.url?.playstore}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Google Play Store" alt="${project.url?.playstore}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_playstore' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-google-play fa-lg"></i></a>`
-              : ""
-          }
-          ${
-            project.url?.appstore
-              ? `<a href="${project.url?.appstore}" title="${project.name}" target="_blank" rel="noopener nofollow" title="Apple App Store" alt="${project.url?.appstore}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_appstore' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-app-store fa-lg"></i></a>`
-              : ""
-          }
-          ${
-            project.url?.github
-              ? `<a href="${project.url?.github}" title="${project.name}" target="_blank" rel="noopener nofollow" title="GitHub" alt="${project.url?.github}" onclick="gtag('event', 'select_content', { content_type: 'project',  content_id: '${project.name}_github' })" class="hover:scale-125 hover:text-blue-500"><i class="fab fa-github fa-lg"></i></a>`
-              : ""
-          }
-        </div>
+        ${links}
       </div>
     </div>
   `;

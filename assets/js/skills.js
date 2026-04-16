@@ -123,9 +123,9 @@ const skillsEl = document.getElementById("my-skills");
 // Loop through skills data and render it to the DOM
 skills.forEach((item) => {
   skillsEl.innerHTML += `
-    <div class="flex flex-col items-center justify-center rounded-lg bg-slate-100 gap-0.5 shadow-lg aspect-square w-[120px] h-[120px]">
-      <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-contain" />
-      <span class="text-sm text-center">${item.name}</span>
+    <div class="skill-tile">
+      <img src="${item.image}" alt="${item.name}" loading="lazy" />
+      <span>${item.name}</span>
     </div>
   `;
 });

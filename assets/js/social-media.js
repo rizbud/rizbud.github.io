@@ -32,11 +32,9 @@ socialMedia.forEach((item) => {
       target="_blank"
       rel="noopener nofollow"
       title="${item.name}"
-      alt="${item.url}"
-      onclick="gtag('event', 'select_content', { content_type: 'social_media',  content_id: '${item.name}' })"
-      class="hover:text-blue-500 hover:scale-125 transition duration-300 ease-in-out"
+      onclick="gtag('event', 'select_content', { content_type: 'social_media', content_id: '${item.name}' })"
     >
-      <i class="${item.icon} fa-lg"></i>
+      <i class="${item.icon}"></i>
     </a>
   `;
 });

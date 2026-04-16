@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <!-- Head -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Rizki Budi Prasetyo is a Full Stack Developer with 3 years of experience. He started his career as a React Native Developer in 2020 and then he became a Full Stack Developer in 2022. Having interest in tech and programming since he was in high school made him decide to pursue a career in the tech industry."
+      content="Rizki Budi Prasetyo is a Full Stack Developer with 5+ years of experience in web and mobile application development using Next.js, React Native, and Node.js."
     />
     <meta
       name="keywords"
-      content="rizki budi prasetyo, rizki budi, rizki prasetyo, budi prasetyo, rizbud, rizb.ud, ri_zbud, rizbud.com, fullstack, full stack, fullstack developer, full stack developer, javascript, typescript, node.js, express.js, fastify, nestjs, react, vue, next.js, nuxt.js, react native, mysql, postgresql"
+      content="rizki budi prasetyo, rizki budi, rizbud, fullstack developer, full stack developer, javascript, typescript, next.js, react native, node.js, express.js, fastify, nestjs"
     />
     <meta
       name="google-site-verification"
@@ -25,7 +24,7 @@
     />
     <meta
       property="og:description"
-      content="Rizki Budi Prasetyo is a Full Stack Developer with 4 years of experience. He started his career as a React Native Developer in 2020 and then he became a Full Stack Developer in 2022. Having interest in tech and programming since he was in high school made him decide to pursue a career in the tech industry."
+      content="Rizki Budi Prasetyo is a Full Stack Developer with 5+ years of experience in web and mobile application development."
     />
     <meta
       property="og:image"
@@ -34,127 +33,136 @@
 
     <title>Rizki Budi Prasetyo | Full Stack Developer</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Tailwind CSS -->
-    <script rel="stylesheet" src="https://cdn.tailwindcss.com"></script>
     <link rel="canonical" href="https://rizbud.com" />
   </head>
 
-  <!-- Body -->
-  <body
-    class="min-h-screen bg-slate-200 text-slate-800 overflow-x-hidden overscroll-none"
-  >
-    <!-- Header section -->
-    <header class="sticky top-0 z-10 w-full max-w-screen-lg mx-auto px-6">
-      <!-- Navbar -->
-      <nav class="bg-slate-100 rounded-b-lg shadow-lg p-6">
-        <ul
-          class="flex text-md md:text-base justify-center gap-3 md:justify-start md:gap-6"
-        >
-          <li>
-            <a href="#" class="underline hover:text-blue-500">About</a>
-          </li>
-          <li>
-            <a href="#skills" class="underline hover:text-blue-500">Skills</a>
-          </li>
-          <li>
-            <a href="#experience" class="underline hover:text-blue-500"
-              >Experience</a
-            >
-          </li>
-          <li>
-            <a href="#projects" class="underline hover:text-blue-500"
-              >Projects</a
-            >
-          </li>
-        </ul>
-      </nav>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar">
+      <div class="container">
+        <div class="navbar-inner">
+          <a href="#" class="navbar-brand">Rizki Budi</a>
+          <nav>
+            <ul class="navbar-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <!-- Main section -->
-    <main class="max-w-screen-lg mx-auto p-6 my-4 flex flex-col gap-12">
-      <!-- About section -->
-      <div
-        id="about"
-        class="bg-slate-100 p-6 rounded-lg shadow-lg gap-4 flex flex-col-reverse lg:grid lg:grid-cols-4 items-center gap-4"
-      >
-        <div class="col-span-3 flex flex-col">
-          <h1 class="text-3xl font-bold uppercase text-center lg:text-left">
-            Rizki Budi Prasetyo
-          </h1>
-          <h2 class="text-xl font-semibold text-center lg:text-left">
-            Full Stack Developer
-          </h2>
-
-          <article class="mt-4 text-justify">
-            <p>
-              Hello, I am Rizki Budi Prasetyo, a Full Stack Developer with 4
-              years of experience. I started my career as a React Native
-              Developer in 2020 and then I became a Full Stack Developer in
-              2022. Having interest in tech and programming since I was in high
-              school made me decide to pursue a career in the tech industry.
-            </p>
-            <p class="mt-2">
-              I primarily focus on web application development utilizing Next.js
-              and mobile application development using React Native.
-              Occasionally, I also engage in backend development using Node.js,
-              Express.js, Fastify, and NestJS.
-            </p>
-          </article>
-
-          <div
-            class="flex flex-col md:flex-row gap-3 md:gap-4 mt-4 items-center justify-center w-full text-center"
-          >
-            <a
-              href="mailto:rizkibudi513@gmail.com"
-              onclick="trackGenerateLead('contact', 'Contact Me')"
-              class="bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg w-full hover:bg-slate-700"
-              >Contact Me</a
-            >
-            <a
-              href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=rizbud.com"
-              target="_blank"
-              rel="noopener"
-              onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
-              class="bg-[#108a00] text-white font-semibold py-2 px-4 rounded-lg w-full hover:bg-[#14a800]"
-              >Hire Me on Upwork</a
-            >
-          </div>
-        </div>
-
-        <div class="w-full flex flex-col items-center gap-5">
-          <div class="relative group overflow-hidden rounded-full w-fit h-fit">
-            <img
-              src="assets/images/profile.webp"
-              alt="Rizki Budi Prasetyo"
-              loading="lazy"
-              class="rounded-full shadow-lg aspect-square w-48 h-48 group-hover:scale-125 transition-transform duration-300"
-            />
+    <!-- Hero / About -->
+    <section id="about">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text left on desktop -->
+          <div class="hero-text">
+            <span class="hero-label">Full Stack Developer</span>
+            <h1 class="hero-name">Rizki Budi Prasetyo</h1>
+            <p class="hero-title">5+ years crafting web &amp; mobile apps</p>
+            <div class="hero-bio">
+              <p>
+                Hello, I'm Rizki Budi Prasetyo — a Full Stack Developer with
+                more than 5 years of experience. I started as a React Native
+                Developer in 2020 and grew into full-stack development in 2022.
+              </p>
+              <p>
+                I focus on web development with Next.js and mobile development
+                using React Native, with backend work in Node.js, Express.js,
+                Fastify, and NestJS.
+              </p>
+            </div>
+            <div class="hero-ctas">
+              <a
+                href="mailto:rizkibudi513@gmail.com"
+                onclick="trackGenerateLead('contact', 'Contact Me')"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-envelope"></i> Contact Me
+              </a>
+              <a
+                href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=rizbud.com"
+                target="_blank"
+                rel="noopener"
+                onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
+                class="btn btn-upwork"
+              >
+                Hire Me on Upwork
+              </a>
+            </div>
           </div>
 
-          <div id="social-media" class="flex gap-4"></div>
+          <!-- Avatar right on desktop -->
+          <div class="hero-avatar-col">
+            <div class="avatar-wrap">
+              <img
+                src="assets/images/profile.webp"
+                alt="Rizki Budi Prasetyo"
+                class="avatar-img"
+              />
+            </div>
+            <div id="social-media"></div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Skills section -->
-      <div id="skills" class="flex flex-col justify-center">
-        <h2 class="text-2xl font-semibold text-center">Skills</h2>
-        <div
-          id="my-skills"
-          class="flex flex-wrap gap-2 md:gap-4 justify-center mt-4"
-        ></div>
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">18+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">28+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="mt-10 text-center">
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div id="my-skills" class="skills-grid"></div>
+        <div class="skills-cta">
           <p>
-            Looking for a Developer with the skills I have? Let's work together!
+            Looking for a developer with these skills? Let's build something
+            together.
           </p>
-          <div class="flex gap-4 justify-center w-full">
+          <div class="cta-row">
             <a
               href="mailto:rizkibudi513@gmail.com"
               onclick="trackGenerateLead('contact', 'Contact Me')"
-              class="bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg mt-4 w-fit hover:bg-slate-700"
+              class="btn btn-primary"
               >Contact Me</a
             >
             <a
@@ -162,75 +170,123 @@
               target="_blank"
               rel="noopener"
               onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
-              class="bg-[#108a00] text-white font-semibold py-2 px-4 rounded-lg mt-4 w-fit hover:bg-[#14a800]"
+              class="btn btn-upwork"
               >Hire Me on Upwork</a
             >
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Experience section -->
-      <div
-        id="experience"
-        class="flex flex-col justify-center items-center -translate-x-12 opacity-0"
-      >
-        <h2 class="text-2xl font-semibold text-center">Experience</h2>
-        <div id="my-experience" class="flex flex-col mt-4"></div>
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div id="my-experience" class="timeline"></div>
       </div>
+    </section>
 
-      <!-- Projects section -->
-      <div
-        id="projects"
-        class="flex flex-col justify-center items-center translate-x-12 opacity-0"
-      >
-        <h2 class="text-2xl font-semibold text-center">Projects</h2>
-        <div
-          id="my-projects"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mt-4 flex-wrap"
-        ></div>
-        <span class="text-center mt-4"
-          >See my open source projects on
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div id="my-projects" class="projects-grid"></div>
+        <p class="projects-footer">
+          See more open source work on
           <a
             href="https://github.com/rizbud?tab=repositories"
             target="_blank"
-            class="underline text-blue-500"
+            rel="noopener"
             >github.com/rizbud</a
           >.
-        </span>
-      </div>
-
-      <!-- Hire Me section -->
-      <div
-        id="hire-me"
-        class="flex flex-col justify-center items-center translate-y-16 opacity-0 mb-12"
-      >
-        <h2 class="text-2xl font-semibold text-center">Hire Me</h2>
-        <p class="text-center mt-4">
-          I am available for freelance work or full-time employment. If you have
-          a project you want to start, think you need my help with something, or
-          just fancy saying hey, then get in touch.
         </p>
+      </div>
+    </section>
 
-        <div
-          class="flex flex-col md:flex-row items-center gap-3 md:gap-4 mt-4 justify-center w-full text-center"
-        >
-          <a
-            href="mailto:rizkibudi513@gmail.com"
-            onclick="trackGenerateLead('contact', 'Contact Me')"
-            class="bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg w-full hover:bg-slate-700"
-            >Contact Me</a
-          >
-          <a
-            href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=rizbud.com"
-            target="_blank"
-            rel="noopener"
-            onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
-            class="bg-[#108a00] text-white font-semibold py-2 px-4 rounded-lg w-full hover:bg-[#14a800]"
-            >Hire Me on Upwork</a
-          >
+    <!-- Hire Me -->
+    <section id="hire-me" class="section">
+      <div class="container">
+        <div class="hire-inner reveal">
+          <span class="hire-label">Available for work</span>
+          <h2 class="hire-heading">Let's Work Together</h2>
+          <p class="hire-body">
+            I'm available for freelance work or full-time employment. If you
+            have a project to start, need my help with something, or just want
+            to say hi — get in touch.
+          </p>
+          <div class="hire-ctas">
+            <a
+              href="mailto:rizkibudi513@gmail.com"
+              onclick="trackGenerateLead('contact', 'Contact Me')"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+            <a
+              href="https://upwork.com/freelancers/~013a67803848a67207?mp_source=rizbud.com"
+              target="_blank"
+              rel="noopener"
+              onclick="trackGenerateLead('hire', 'Hire Me on Upwork')"
+              class="btn btn-upwork"
+            >
+              Hire Me on Upwork
+            </a>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-social">
+            <a
+              href="https://github.com/rizbud"
+              target="_blank"
+              rel="noopener nofollow"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/rizbud"
+              target="_blank"
+              rel="noopener nofollow"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://twitter.com/ri_zbud"
+              target="_blank"
+              rel="noopener nofollow"
+              title="Twitter / X"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="mailto:rizkibudi513@gmail.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p class="footer-copy">
+            &copy; <span id="current-year"></span> Rizki Budi Prasetyo. All rights reserved.
+            <script>
+              (function(){
+                var el = document.getElementById('current-year');
+                if (el) el.textContent = new Date().getFullYear();
+              })();
+            </script>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -243,29 +299,16 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-70Q1S0MP16");
     </script>
 
-    <!-- Javascript -->
-    <script src="assets/js/script.js"></script>
+    <!-- JavaScript -->
     <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/social-media.js"></script>
     <script src="assets/js/skills.js"></script>
     <script src="assets/js/experience.js"></script>
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/animation.js"></script>
-
-    <!-- Google Fonts Montserrat -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Font Awesome 6 -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      rel="stylesheet"
-    />
   </body>
 </html>
