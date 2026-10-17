@@ -1,5 +1,24 @@
 const projects = [
   {
+    name: "Ngojek NTB",
+    image: "assets/images/ngojekntb.png",
+    techstack: [
+      "TypeScript",
+      "Astro",
+      "Bun",
+      "Hono",
+      "Cloudflare",
+      "PostgreSQL",
+      "Redis",
+      "WebSocket",
+      "Nginx",
+    ],
+    url: {
+      web: "https://ngojekntb.com",
+    },
+    objectFit: "cover",
+  },
+  {
     name: "Tabist.co.jp",
     image: "assets/images/tabist.png",
     techstack: [
